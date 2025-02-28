@@ -11,7 +11,6 @@ const LoginScreen = () => {
   const handleLogin = async () => {
     try {
       await signIn(email, password);
-      // Si es correcto, AppNavigator mostrará HomeNavigator (no podrás volver atrás al Login).
     } catch (error) {
       console.error(error);
       alert('Error al iniciar sesión. Verifica tus credenciales.');

@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
     try {
       await signOut(auth);
     } catch (error) {
-      console.error('Error al cerrar sesión:', error);
+      console.error('No pude cerrar sesión, fallo aquí ', error);
     }
   };
 
